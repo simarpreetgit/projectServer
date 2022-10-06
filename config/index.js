@@ -23,7 +23,7 @@ module.exports = (app) => {
   app.use(logger("dev"));
 
   app.use(   
-     cors({      origin: ["http://localhost:3000","https://singh-restro.netlify.app/"], 
+     cors({      origin: ["http://localhost:3000","https://singh-restro.netlify.app"], 
        })  );
   // To have access to `body` property in the request
   app.use(express.json());
